@@ -44,51 +44,16 @@ function mostrar_ocultar(id_elem){
 function dibujarCircCuad() {
     var canvas = document.getElementById("myCanvas");
     var ctx = canvas.getContext("2d")
-    ctx.fillStyle = "black";
+
+    ctx.fillStyle = "#E61C1C";
     ctx.beginPath();
-    ctx.rect(0,0,30,40);
+    ctx.arc(47, canvas.height/2, 28,0,2*Math.PI);
     ctx.fill();
     ctx.closePath();
 
-    ctx.fillStyle = "black";
+    ctx.fillStyle = "#1C5CE6";
     ctx.beginPath();
-    ctx.arc(canvas.width/2, canvas.height/2, 30,0,2*Math.PI);
-    ctx.fill();
-    ctx.closePath();
-
-    ctx.fillStyle = "white";
-    ctx.beginPath();
-    ctx.arc(canvas.width/2, canvas.height/2, 25,0,2*Math.PI);
-    ctx.fill();
-    ctx.closePath();
-
-    ctx.fillStyle = "black";
-    ctx.beginPath();
-    ctx.arc(canvas.width/2, canvas.height/2, 20,0,2*Math.PI);
-    ctx.fill();
-    ctx.closePath();
-
-    ctx.fillStyle = "white";
-    ctx.beginPath();
-    ctx.arc(canvas.width/2, canvas.height/2, 15,0,2*Math.PI);
-    ctx.fill();
-    ctx.closePath();
-
-    ctx.fillStyle = "black";
-    ctx.beginPath();
-    ctx.arc(canvas.width/2, canvas.height/2, 10,0,2*Math.PI);
-    ctx.fill();
-    ctx.closePath();
-
-    ctx.fillStyle = "white";
-    ctx.beginPath();
-    ctx.arc(canvas.width/2, canvas.height/2, 5,0,2*Math.PI);
-    ctx.fill();
-    ctx.closePath();
-
-    ctx.fillStyle = "black";
-    ctx.beginPath();
-    ctx.arc(canvas.width/2, canvas.height/2, 2,0,2*Math.PI);
+    ctx.arc(47, 300, 28,0,2*Math.PI);
     ctx.fill();
     ctx.closePath();
 }
